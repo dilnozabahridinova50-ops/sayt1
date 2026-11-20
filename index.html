@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple O'zbekiston — Rasmiy uslubdagi sayt</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ENG YUQORI BO'LIMLAR MENYUSI -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#bosh-sahifa" class="logo" onclick="bolimniOch('bosh-sahifa')"> Apple</a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#bosh-sahifa" class="nav-btn active" data-bolim="bosh-sahifa">Bosh sahifa</a>
+        <a href="#iphone" class="nav-btn" data-bolim="iphone">iPhone</a>
+        <a href="#mac" class="nav-btn" data-bolim="mac">Mac</a>
+        <a href="#ipad" class="nav-btn" data-bolim="ipad">iPad</a>
+        <a href="#watch" class="nav-btn" data-bolim="watch">Watch</a>
+        <a href="#savatcha" class="nav-btn" data-bolim="savatcha">
+          Savatcha (<span id="savat-soni">0</span>)
+        </a>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Menyu">☰</button>
+    </div>
+  </header>
+
+  <!-- ASOSIY SAHIFA KONTENTI -->
+  <main class="container">
+
+    <!-- 1-BO'LIM: BOSH SAHIFA -->
+    <section id="bosh-sahifa" class="bolim aktiv-bolim">
+      <div class="hero-card rasm-fon">
+        <div class="hero-mazmun">
+          <span class="badge">Yangi avlod</span>
+          <h1>iPhone 17 Pro</h1>
+          <p class="subtitle">Titan korpus, beqiyos kamera tizimi va A19 Pro chipi quvvati.</p>
+          <div class="hero-actions">
+            <button class="btn asosiy-btn" onclick="bolimniOch('iphone')">Batafsil ko'rish</button>
+            <button class="btn ikkilamchi-btn" onclick="savatgaQosh('iPhone 17 Pro', 1499)">Savatga qo'shish — $1,499</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="bolim-sarlavhasi">Mashhur qurilmalar</h2>
+      <div class="grid-3">
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80"
+            alt="MacBook Pro"
+          />
+          <h3>MacBook Pro 16"</h3>
+          <p>Professional ishlar uchun yuqori unumdorlik va uzoq avtonom ishlash.</p>
+          <div class="narx">$2,499</div>
+          <div class="karta-tugmalar">
+            <button class="btn asosiy-btn" onclick="savatgaQosh('MacBook Pro 16', 2499)">Savatga</button>
+            <button class="btn ikkilamchi-btn" onclick="bolimniOch('mac')">Mac bo'limi</button>
+          </div>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80"
+            alt="iPad Pro"
+          />
+          <h3>iPad Pro</h3>
+          <p>Ultra yupqa dizayn, yorqin OLED ekran va Apple Pencil qo'llab-quvvatlovi.</p>
+          <div class="narx">$999</div>
+          <div class="karta-tugmalar">
+            <button class="btn asosiy-btn" onclick="savatgaQosh('iPad Pro', 999)">Savatga</button>
+            <button class="btn ikkilamchi-btn" onclick="bolimniOch('ipad')">iPad bo'limi</button>
+          </div>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80"
+            alt="Apple Watch"
+          />
+          <h3>Apple Watch Ultra</h3>
+          <p>Salomatlikni kuzatish, sport mashqlari va har qanday ob-havoga chidamlilik.</p>
+          <div class="narx">$799</div>
+          <div class="karta-tugmalar">
+            <button class="btn asosiy-btn" onclick="savatgaQosh('Apple Watch Ultra', 799)">Savatga</button>
+            <button class="btn ikkilamchi-btn" onclick="bolimniOch('watch')">Watch bo'limi</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-BO'LIM: IPHONE -->
+    <section id="iphone" class="bolim">
+      <div class="bolim-boshi">
+        <h2>iPhone modellari</h2>
+        <p>Har bir kundalik vazifa uchun tezkor kamera, tiniq ekran va kuchli batareya.</p>
+      </div>
+      <div class="grid-2">
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1592750475338-74b7b21085ab?auto=format&fit=crop&w=800&q=80"
+            alt="iPhone 17 Pro"
+          />
+          <h3>iPhone 17 Pro</h3>
+          <p>48 MP asosiy kamera, 5x optik yaqinlashtirish va yengil titan korpus.</p>
+          <div class="narx">$1,499</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('iPhone 17 Pro', 1499)">Savatga qo'shish</button>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=800&q=80"
+            alt="iPhone 17"
+          />
+          <h3>iPhone 17</h3>
+          <p>Yorqin Super Retina XDR displey, kun bo'yi yetadigan quvvat va zamonaviy ranglar.</p>
+          <div class="narx">$999</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('iPhone 17', 999)">Savatga qo'shish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-BO'LIM: MAC -->
+    <section id="mac" class="bolim">
+      <div class="bolim-boshi">
+        <h2>Mac kompyuterlari</h2>
+        <p>Dasturlash, dizayn, video montaj va kundalik ishlar uchun ishonchli tanlov.</p>
+      </div>
+      <div class="grid-2">
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?auto=format&fit=crop&w=800&q=80"
+            alt="MacBook Air"
+          />
+          <h3>MacBook Air 15"</h3>
+          <p>Shovqinsiz ishlash, yengil vazn va 18 soatgacha batareya quvvati.</p>
+          <div class="narx">$1,299</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('MacBook Air 15', 1299)">Savatga qo'shish</button>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80"
+            alt="MacBook Pro"
+          />
+          <h3>MacBook Pro 16"</h3>
+          <p>Og'ir loyihalar va 3D grafikalar uchun maksimal quvvat.</p>
+          <div class="narx">$2,499</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('MacBook Pro 16', 2499)">Savatga qo'shish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4-BO'LIM: IPAD -->
+    <section id="ipad" class="bolim">
+      <div class="bolim-boshi">
+        <h2>iPad planshetlari</h2>
+        <p>O'qish, chizish, hujjatlar bilan ishlash va ko'ngilochar videolar uchun qulay.</p>
+      </div>
+      <div class="grid-2">
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&w=800&q=80"
+            alt="iPad Pro"
+          />
+          <h3>iPad Pro</h3>
+          <p>Professional darajadagi ekran va yuqori tezlikdagi ishlash.</p>
+          <div class="narx">$999</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('iPad Pro', 999)">Savatga qo'shish</button>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1585790050230-5dd28404ccb9?auto=format&fit=crop&w=800&q=80"
+            alt="iPad Air"
+          />
+          <h3>iPad Air</h3>
+          <p>Qulay narx, kuchli protsessor va kundalik vazifalar uchun mukammal muvozanat.</p>
+          <div class="narx">$599</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('iPad Air', 599)">Savatga qo'shish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-BO'LIM: WATCH -->
+    <section id="watch" class="bolim">
+      <div class="bolim-boshi">
+        <h2>Apple Watch</h2>
+        <p>Yurak urishi, uyqu, mashg'ulotlar va bildirishnomalar doimo qo'lingizda.</p>
+      </div>
+      <div class="grid-2">
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?auto=format&fit=crop&w=800&q=80"
+            alt="Apple Watch Ultra"
+          />
+          <h3>Apple Watch Ultra</h3>
+          <p>Sayohat va ekstremal mashg'ulotlar uchun mustahkam korpus.</p>
+          <div class="narx">$799</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('Apple Watch Ultra', 799)">Savatga qo'shish</button>
+        </div>
+
+        <div class="mahsulot-karta">
+          <img
+            src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=800&q=80"
+            alt="Apple Watch Series"
+          />
+          <h3>Apple Watch Series</h3>
+          <p>Har kungi faollik, qo'ng'iroqlar va sog'liq ko'rsatkichlari nazorati.</p>
+          <div class="narx">$399</div>
+          <button class="btn asosiy-btn" onclick="savatgaQosh('Apple Watch Series', 399)">Savatga qo'shish</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6-BO'LIM: SAVATCHA -->
+    <section id="savatcha" class="bolim">
+      <div class="bolim-boshi">
+        <h2>Sizning savatchangiz</h2>
+        <p>Tanlangan mahsulotlarni ko'ring, o'chiring yoki buyurtmani rasmiylashtiring.</p>
+      </div>
+
+      <div class="savatcha-quti">
+        <div id="savatcha-royxat"></div>
+        <div class="savatcha-pastki">
+          <div class="jami-summa">Jami summa: $<span id="jami-narx">0</span></div>
+          <div class="savatcha-tugmalar">
+            <button class="btn ikkilamchi-btn" onclick="savatniTozalash()">Tozalash</button>
+            <button class="btn asosiy-btn" onclick="buyurtmaBerish()">Buyurtma berish</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- XABAR KO'RSATISH OYNASI (TOAST) -->
+  <div id="xabar-oyna" class="xabar-oyna"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Apple uslubidagi o'quv veb-sayt loyihasi • Barcha ma'lumotlar o'zbek tilida</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
